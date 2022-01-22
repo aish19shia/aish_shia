@@ -1,0 +1,157 @@
+body{
+    background-image: url(./letter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 40px;
+}
+
+.content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 30px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px ;
+    border-radius: 25px;
+    font-weight: 100;
+    border: 2px solid white;
+    color: violet;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+span{
+    background: violet;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+    color: lightgoldenrodyellow;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color: mistyrose;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    text-align: center;
+    text-align: center;
+    height: 100px;
+    padding: auto;
+    margin: auto;
+
+}
+
+nav > ul{
+    color: black;
+    list-style-type: none;
+    border: peru 5px solid;
+    height: 90px;
+    padding: auto;
+    margin: auto;
+}
+
+nav > ul > li{
+    display: inline;
+    padding: 3%;
+    padding-left: 2%;
+    padding-right: 4%;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: darkred;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+
+}   
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+    
+}
+
+
+.btn:hover{
+    color: burlywood;
+    background-color: cadetblue;
+    font-style: italic;
+    /* padding: 5px; */
+}
+
+.btn{
+    background-color: lightgoldenrodyellow;
+    /* color: black;
+    font-family: 'Times New Roman', Times,  serif; */
+    color: darkred;
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    /* border: black;
+    border-style: solid;
+    border-width: 10%; */
+    border: none;
+}
+
+.dropdowncontent{
+        display: none;
+        position: absolute;
+        background-color: darkturquoise;
+        /* z-index: 1; */
+        min-width: 160px;
+}
+
+.dropdowncontent a:hover{
+    background-color: darkgray;
+}
+
+.dropdowncontent a{
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdowncontent{ 
+display: block;
+    }
